@@ -12,6 +12,7 @@ bool chk = 0;
 // funcs
 bool checkPrime(int inp){
     if(inp == 2) return true;
+    if(inp < 2) return false;
     for(int i = 2; i <= sqrt(inp); ++i){
         if(inp % i == 0) return false;
     }
